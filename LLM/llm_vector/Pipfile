@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+package-name = "*"
+streamlit = "*"
+openai = "*"
+together = "*"
+langchain = "*"
+watchdog = "*"
+pinecone-client = {extras = ["grpc"], version = "*"}
+pinecone = {extras = ["asyncio", "grpc"], version = "*"}
+sentence-transformers = "*"
+langchain-community = "*"
+transformers = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.13"
+python_full_version = "3.13.2"
+
+[pipenv]
+allow_prereleases = true
